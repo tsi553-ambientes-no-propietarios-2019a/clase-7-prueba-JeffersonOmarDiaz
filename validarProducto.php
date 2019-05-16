@@ -24,9 +24,9 @@ if ($_POST) {
                 echo 'Hubo un error al registrar los datos en la base tipo de error ' .$conn->error;
             exit;
             }else{
-                echo '</br>REGISTRO EXITOSO';
-                session_abort();
-                include('nuevo_producto.php');
+                echo '</br>REGISTRO EXITOSO ',$_POST['userName'];
+                //session_abort();
+                include('inicio.php');
             }
     }
 }else{

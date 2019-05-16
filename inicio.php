@@ -1,5 +1,7 @@
 <?php
-include("utils.php");
+//include("utils.php");
+
+
 //consulta
 $sql_extraer= "Select * from producto";
 //como se almacena para obtener el resultado $result = mysqli_query($conexion,$conasulta);
@@ -23,7 +25,7 @@ $resulta = mysqli_query($conn,$sql_extrarNameTienda);
 </head>
 <body>
     <h1 align = "center">Productos disponibles</h1>
-    <?php echo '<h2>Bienvenido ' .strtoupper($_POST['userName']),'</h2>';
+    <?php echo '<h2>Bienvenido ' .strtoupper($user),'</h2>';
 
     while($fila = mysqli_fetch_array($resulta)){
      echo '<h2>A la Tienda: ',$fila['nombTienda'],'</h2>'; 

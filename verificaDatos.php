@@ -2,6 +2,7 @@
 
 include('utils.php');
 
+
 if($_POST){
     if(isset($_POST['userName']) && isset($_POST['password']) && 
     !empty($_POST['userName']) && !empty($_POST['userName'])){
@@ -30,6 +31,7 @@ if($_POST){
             //echo '</br>datos de usuario clave' ,$passwor;
             //echo '</br>los datos son validos';
             
+
             include('inicio.php');
         }
         } else {
